@@ -1,0 +1,81 @@
+{
+    "tables": {
+        "stock": {
+            "tableName": "stock",
+            "schema": {
+                "itemType": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "field": "itemType",
+                    "seqType": "Sequelize.STRING(45)"
+                },
+                "small": {
+                    "allowNull": true,
+                    "field": "small",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "medium": {
+                    "allowNull": true,
+                    "field": "medium",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "large": {
+                    "allowNull": true,
+                    "field": "large",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "UserId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "FirstName": {
+                    "field": "FirstName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "LastName": {
+                    "field": "LastName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Email": {
+                    "unique": true,
+                    "field": "Email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Username": {
+                    "unique": true,
+                    "field": "Username",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Password": {
+                    "field": "Password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "Admin": {
+                    "allowNull": false,
+                    "default": false,
+                    "field": "Admin",
+                    "seqType": "Sequelize.BOOLEAN"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 3
+}
