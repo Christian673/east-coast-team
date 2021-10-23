@@ -16,6 +16,9 @@ export const Navbar = () => {
                             <a className="nav-link active" href="http://localhost:3000/">Home</a>
                             </li>
                             <li className="nav-item">
+                            <a className="nav-link" href="http://localhost:3000/Register">Register</a>
+                            </li>
+                            <li className="nav-item">
                             <a className="nav-link" href="http://localhost:3000/login">Login</a>
                             </li>
                             <li className="nav-item">

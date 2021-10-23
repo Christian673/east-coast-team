@@ -4,6 +4,7 @@ import WhiteShirt from "./WhiteShirt";
 import { About } from "./About";
 import Login from './Login';
 import Home from "./Home";
+import Register from "./Register"
 import {Route, BrowserRouter as Router} from 'react-router-dom'
 
 export const Routes = () => {
@@ -15,6 +16,7 @@ export const Routes = () => {
                 <Route path='/WhiteShirt' component={WhiteShirt}></Route>
                 <Route path='/About' component={About}></Route>
                 <Route path='/Login' component={Login}></Route>
+                <Route path='/Register' component={Register}></Route>
             </Router>
         </div>
     )

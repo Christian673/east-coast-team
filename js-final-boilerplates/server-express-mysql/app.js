@@ -15,6 +15,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 
+
+
+
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'index', layoutsDir: __dirname + '/views'}));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
